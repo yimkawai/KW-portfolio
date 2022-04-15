@@ -1,0 +1,10 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(/src/font/Emmascript_MVB_Std_Regular.otf);
+  }
+
+nav .navbar-brand {
+      font-family: myFirstFont;
+      font-size: 35px;
+  }
+
