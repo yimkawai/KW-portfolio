@@ -18,3 +18,12 @@
     margin-left: auto;
     max-width: 1200px; /* or 950px */
   }
+
+main h1 {
+    font-family: myFirstFont;
+    font-size: min(10vw, 120px);
+    margin-top: 50px;
+    color: rgb(227, 77, 8);
+    transform: rotate(-4deg);
+
+}
