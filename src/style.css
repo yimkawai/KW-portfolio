@@ -38,10 +38,10 @@ nav .navbar-brand {
 .marquee-text {
   display: inline-block;
   line-height: 30px;
-  animation: marquee 80s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 @keyframes marquee {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  100% { transform: translateX(-50%); }
 }
