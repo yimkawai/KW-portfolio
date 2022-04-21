@@ -1,21 +1,7 @@
-@font-face {
+ @font-face {
   font-family: myFirstFont;
   src: url(/src/font/Emmascript_MVB_Std_Regular.otf);
 }
-
-nav {
-  color: blue !important;
-}
-
-nav .navbar-brand {
-  font-family: myFirstFont;
-  font-size: 35px;
-  color: blue !important;
-}
-
-.nav-link {
-  color: blue !important;
-  }
 
 * {
   font-family: 'Open Sans', sans-serif;
@@ -23,21 +9,39 @@ nav .navbar-brand {
   font-size: 15px;
 }
 
-.one .col {
-  background-color: blue;
-  margin: 0 -12px !important;
+nav .navbar-brand {
+  font-family: myFirstFont;
+  font-size: 35px;
 }
 
-.one .text {
+.nav-link {
+  color: black !important;
+}
+
+
+.kiss .container-fluid {
+  max-width: 1000px;
+}
+
+.kiss col {
   position: absolute;
-  font-size: 15vw;
-  font-weight: 700;
-  opacity: 0;
-  color: white;
 }
 
-.two .container-fluid {
-  max-width: 1000px; /* or 950px */
+.kiss .marquee {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
 }
 
+.marquee-text {
+  display: inline-block;
+  line-height: 30px;
+  animation: marquee 80s linear infinite;
+}
 
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}

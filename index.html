@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+
     <!-- time script -->
     <script src="src/moment.min.js"></script>
     <script src="src/moment-timezone-with-data.min.js"></script>
@@ -22,18 +23,18 @@
     <script type="text/javascript">
 
         function showLocalTime(container, zoneString, formatString){
-        	var thisobj=this
-        	this.container=document.getElementById(container)
-        	this.localtime = moment.tz(new Date(), zoneString)
-        	this.formatString = formatString
-        	this.container.innerHTML = this.localtime.format( this.formatString )
-        	setInterval(function(){thisobj.updateContainer()}, 1000) //update container every second
+            var thisobj=this
+            this.container=document.getElementById(container)
+            this.localtime = moment.tz(new Date(), zoneString)
+            this.formatString = formatString
+            this.container.innerHTML = this.localtime.format( this.formatString )
+            setInterval(function(){thisobj.updateContainer()}, 1000) //update container every second
         }
 
         showLocalTime.prototype.updateContainer=function(){
-	        this.localtime.second(this.localtime.seconds() + 1 )
-	        this.container.innerHTML = this.localtime.format( this.formatString )
-        }
+        this.localtime.second(this.localtime.seconds() + 1 )
+        this.container.innerHTML = this.localtime.format( this.formatString )
+            }
     </script>
     
 </head>
@@ -61,20 +62,9 @@
         </nav>
     </header>
 
-    <section class="section one"> 
-        <div class="container-fluid" id="hero">
-            <div class="col d-flex align-items-center justify-content-center min-vh-100" id="heroPanel">
-                <div class="text text1">KEEP</div>
-                <div class="text text2">IT</div> 
-                <div class="text text2">SIMPLE</div>
-                <div class="text text3">STUPID</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section two">
-        <div class="container-fluid">
-            <div class="col min-vh-100 d-flex align-items-center justify-content-center">
+    <section class="kiss">
+        <div class="container-fluid min-vh-100 d-flex align-items-center justify-content-center">
+            <div class="col mt-4">
                 <svg id="KISS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260.225 556.486">
                     <g id="KISS-2" data-name="KISS" transform="translate(0 0)" fill="#141414">
                       <path d="M264.137,273.2,364.269,87.075,247.12,89.09,192.18,228.725q-2.067,6.189-4.124,12.255t-4.05,12.039q-1.993,5.973-3.915,11.925t-3.719,11.909h-1.544L146.6,90.818,51.633,92.451l71.394,388.727,83.041,1.511L188.835,369.142l20.475-34.869,91.747,150.145,98.114,1.785ZM432.924,486.816l88.3,1.606L508.959,84.587,407.117,86.338Zm413.89-393.18a156.5,156.5,0,0,0-18.734-7.661,202.979,202.979,0,0,0-23.3-6.32,245.7,245.7,0,0,0-27.687-4.15,287.144,287.144,0,0,0-31.843-1.162c-27.213.482-51.441,4.876-72.424,12.407-20.807,7.468-38.358,18-52.459,30.821a126.426,126.426,0,0,0-31.494,43.957,129.5,129.5,0,0,0-10.227,52.1,100.851,100.851,0,0,0,6.83,36.185,110.394,110.394,0,0,0,19.532,31.944,162.626,162.626,0,0,0,31.8,27.851,270.382,270.382,0,0,0,43.828,23.848c10.882,4.683,20.209,9.03,28.06,13.29a106.9,106.9,0,0,1,19.168,12.74,41.088,41.088,0,0,1,10.759,13.639,33.037,33.037,0,0,1,2.852,15.932,34.135,34.135,0,0,1-4.5,15.578,35.639,35.639,0,0,1-11.662,11.93,58.3,58.3,0,0,1-18.794,7.548,110.763,110.763,0,0,1-25.957,2.433,202.864,202.864,0,0,1-24.761-1.9,238,238,0,0,1-23.909-4.538c-7.689-1.867-15.028-4.046-21.8-6.408a179.9,179.9,0,0,1-18.405-7.51l-15.2,69.544a123.713,123.713,0,0,0,17.524,7.028,240.717,240.717,0,0,0,23.467,6.267c8.605,1.865,17.893,3.459,27.547,4.633a293.04,293.04,0,0,0,29.8,2.119c24.286.451,46.2-2.007,65.52-6.986,19.468-5.017,36.369-12.606,50.446-22.389a111.587,111.587,0,0,0,48.818-83.984,103.846,103.846,0,0,0-2.478-34.868A93.344,93.344,0,0,0,822.239,315.8c-7.212-10.056-16.712-19.489-28.694-28.273-12.032-8.821-26.544-16.972-43.718-24.43-13.145-5.844-24.131-10.95-33.2-15.692-9.089-4.751-16.257-9.138-21.758-13.54s-9.352-8.84-11.773-13.671a33.009,33.009,0,0,1-3.263-16.157,34.929,34.929,0,0,1,4.038-15.426,39.662,39.662,0,0,1,11.34-13.073,58.253,58.253,0,0,1,18.8-9.147,96.925,96.925,0,0,1,26.367-3.611,183.824,183.824,0,0,1,25.66,1.512,172.829,172.829,0,0,1,21.879,4.292,167.8,167.8,0,0,1,17.987,5.859c5.337,2.079,10.016,4.216,14.033,6.213Zm352.1-5.609a148.936,148.936,0,0,0-18.926-7.9,201.118,201.118,0,0,0-23.921-6.511,253.454,253.454,0,0,0-28.824-4.269,307.971,307.971,0,0,0-33.576-1.183c-28.864.512-55.025,5.057-78.114,12.837-22.891,7.713-42.688,18.581-59.1,31.806a153.458,153.458,0,0,0-38.416,45.3,141.269,141.269,0,0,0-16.855,53.63,96.837,96.837,0,0,0,3.016,37.213,97.812,97.812,0,0,0,16.915,32.831q11.808,15.305,30.332,28.611a249.611,249.611,0,0,0,43.484,24.492c10.94,4.809,20.276,9.272,28.065,13.646s14,8.642,18.74,13.079,7.959,9.009,9.756,14a31.679,31.679,0,0,1,1.14,16.344,38.1,38.1,0,0,1-6.578,15.974,43.81,43.81,0,0,1-13.7,12.227,70.041,70.041,0,0,1-20.707,7.73,123.911,123.911,0,0,1-27.66,2.484,214.552,214.552,0,0,1-25.891-1.951,242.186,242.186,0,0,1-24.683-4.659,230.985,230.985,0,0,1-22.241-6.574,171.379,171.379,0,0,1-18.536-7.7L868.578,480.7a118.036,118.036,0,0,0,17.651,7.2,238.866,238.866,0,0,0,24,6.425c8.851,1.913,18.451,3.549,28.487,4.755a310.421,310.421,0,0,0,31.157,2.184c25.542.475,48.921-2.03,69.875-7.117,21.113-5.126,39.825-12.888,55.822-22.9a140.575,140.575,0,0,0,39.92-36.907A128.057,128.057,0,0,0,1157,385.177a103.1,103.1,0,0,0,1.512-35.787,83.808,83.808,0,0,0-11.966-32.621c-6.429-10.332-15.351-20.026-26.974-29.054-11.672-9.067-26.046-17.446-43.314-25.114-13.2-6.008-24.211-11.258-33.24-16.135-9.046-4.886-16.107-9.4-21.4-13.925s-8.847-9.093-10.84-14.063c-2-4.985-2.444-10.392-1.556-16.626a38.863,38.863,0,0,1,6.075-15.88,48.707,48.707,0,0,1,13.522-13.464,70.914,70.914,0,0,1,20.958-9.426,109.934,109.934,0,0,1,28.311-3.727,195.613,195.613,0,0,1,26.963,1.55,175.487,175.487,0,0,1,22.637,4.415,163.48,163.48,0,0,1,18.334,6.031c5.4,2.14,10.1,4.341,14.109,6.4Z" stroke="none"></path>
@@ -83,6 +73,13 @@
                   </svg> 
             </div> <!-- col -->
         </div> <!-- container-fluid -->
+
+        <div class="marquee position-absolute bottom-0 start-0 mb-3">
+            <div class="marquee-text">
+                keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;keep it simple stupid&ensp; ○ &ensp;
+            </div>
+        </div>
+
     </section>
 
     <script type="text/javascript">
@@ -93,6 +90,7 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
      <script src="/src/main.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
 </body>
 </html>
