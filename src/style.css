@@ -71,6 +71,7 @@ nav .navbar-brand {
   .div2 { grid-area: 7 / 1 / 11 / 5; }
   .div3 { grid-area: 9 / 8 / 12 / 12; }
   .div4 { grid-area: 2 / 9 / 7 / 12; } 
+  .div5 { grid-area: 5 / 5 / 8 / 8; } 
 
  
   .parent div {
@@ -98,8 +99,15 @@ nav .navbar-brand {
   }
 
   .parent .div4 {
-    width: 200px;
+    width: 250px;
     height: 350px;
+    position: relative;
+    z-index: -3;
+  }
+
+  .parent .div5 {
+    width: 280px;
+    height: 200px;
     position: relative;
     z-index: -3;
   }
