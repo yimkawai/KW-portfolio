@@ -29,6 +29,10 @@ nav .navbar-brand {
   z-index: -2;
 }
 
+.kiss-2 {
+  margin: 150px 0;
+}
+
 
 .kiss .marquee {
   width: 100%;
@@ -63,10 +67,10 @@ nav .navbar-brand {
   max-width: 1200px;
   }
   
-  .div1 { grid-area: 7 / 1 / 11 / 5; }
-  .div2 { grid-area: 9 / 8 / 12 / 13; }
-  .div3 { grid-area: 1 / 1 / 5 / 5; }
-  .div4 { grid-area: 2 / 9 / 7 / 13; } 
+  .div1 { grid-area: 1 / 2 / 5 / 6; }
+  .div2 { grid-area: 7 / 1 / 11 / 5; }
+  .div3 { grid-area: 9 / 8 / 12 / 12; }
+  .div4 { grid-area: 2 / 9 / 7 / 12; } 
 
  
   .parent div {
@@ -94,9 +98,25 @@ nav .navbar-brand {
   }
 
   .parent .div4 {
-    width: 250px;
-    height: 400px;
+    width: 200px;
+    height: 350px;
     position: relative;
     z-index: -3;
   }
 
+  .title, .note {
+    vertical-align: top;
+  }
+  
+  .note {
+    font-size: 10px;
+    padding: 2px;
+  }
+  
+  
+  .h-line {
+    border-bottom: 1px dashed;
+    margin: 25px 0;
+  }
+  
+  
