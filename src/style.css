@@ -36,7 +36,7 @@ div.outline {
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
-  z-index: 4;
+  z-index: 3;
 }
   
 .marquee span {
@@ -53,6 +53,7 @@ div.outline {
 .parent div {
   position: relative;
   max-width: 1000px;
+  width: 100%;
   margin: 10vw;
   display: grid;
   grid-gap: 20px;
@@ -60,11 +61,25 @@ div.outline {
   background-color: yellowgreen;
 }
 
-.div1 { z-index: -3 !important; }
-.div2 { z-index: -1 !important; }
-.div3 { z-index: 3 !important; }
-.div4 { z-index: -3 !important;}
-.div5 { z-index: 3 !important; } 
+.parent .portrait {
+  width: auto;
+  height: auto;
+}
+
+.parent .landscape {
+  width: auto;
+  height: auto;
+}
+
+.parent img {
+  mix-blend-mode:hue;
+}
+
+.div1 { z-index: 0 !important; }
+.div2 { z-index: 3 !important; }
+.div3 { z-index: 6 !important; }
+.div4 { z-index: 2 !important;}
+.div5 { z-index: 0 !important; } 
 
 @media (min-width: 850px) {
   .parent {
@@ -79,6 +94,7 @@ div.outline {
     position: relative;
     margin: auto;
     z-index: 1;
+    background-color: yellowgreen;
   }
 
   .parent .portrait {
@@ -92,12 +108,10 @@ div.outline {
   }
 
   .parent img {
-    max-width: 100%;
-    max-width: 100%;
     mix-blend-mode:hue;
   }
 
-  .div1 { grid-area: 1 / 1 / 3 / 2; z-index: 2 !important;}
+  .div1 { grid-area: 1 / 1 / 3 / 2; z-index: 0 !important;}
   .div2 { grid-area: 2 / 2 / 4 / 3; z-index: 3 !important;}
   .div3 { grid-area: 5 / 1 / 7 / 3; z-index: 6 !important;}
   .div4 { grid-area: 9 / 1 / 11 / 2; z-index: 2 !important;}
