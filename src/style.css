@@ -45,7 +45,6 @@ div.outline {
 }
 
 .parent {
-  position: relative;
   color: white;
   padding: 16px;
   margin-top: 92vh;
@@ -82,27 +81,34 @@ div.outline {
 
 .parent .text {
   position: absolute;
+  padding: 10px;
   width: 100%;
   height: 100%;
-  color: black;
+  text-align:center;
 }
 
 .parent span {
-  margin: auto;
-  padding: 10px;
-  text-align: center;
   position: sticky;
   position: -webkit-sticky;
   top: 45vh;
-  font-size: 2.5vw !important;
-
+  font-size: 18px !important;
 }
+
+.parent a {
+  text-decoration: none;
+  color: black;
+}
+
+.parent a:hover {
+  color: black;
+}
+
 
 .div1 { z-index: 2 !important; }
 .div2 { z-index: 3 !important; }
 .div3 { z-index: 6 !important; }
 .div4 { z-index: 2 !important;}
-.div5 { z-index: 0 !important; } 
+.div5 { z-index: 2 !important; } 
 
 
 @media (min-width: 850px) {
@@ -150,17 +156,19 @@ div.outline {
   position: absolute;
   width: 100%;
   height: 100%;
-  color: black;
+  text-align:center;
 }
 
 .parent span {
-  margin: auto;
-  text-align: center;
   position: sticky;
   position: -webkit-sticky;
   top: 45vh;
-  font-size: 16px !important;
+  font-size: 18px !important;
+}
 
+.parent a {
+  text-decoration: none;
+  color: black;
 }
 
   .div1 { grid-area: 1 / 1 / 3 / 2; z-index: 2 !important;}
@@ -169,3 +177,4 @@ div.outline {
   .div4 { grid-area: 9 / 1 / 11 / 2; z-index: 2 !important;}
   .div5 { grid-area: 8 / 2 / 10 / 3; z-index: 0 !important;} 
 }
+
