@@ -4,3 +4,5 @@ function makeMarquee() {
     const marquee = document.querySelector('.marquee span');
     marquee.innerHTML = marqueeText;
 }
+
+makeMarquee();

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="src/style.css">
 
     <!-- font -->
-    <link rel="stylesheet" href="src/font.css">
+    <link rel="stylesheet" href="/src/font.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
@@ -52,72 +52,50 @@
                         <li class="list-inline-item">&#10040;</li>
                         <li class="list-inline-item">Hong Kong <span id="hongkong"></span> </li>
                     </ul>
-                </div> <!-- end of navbar -->
+                </div>
                 <ul class="nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="">Info</a></li>
                 </ul>
-            </div> <!-- end of container-lg -->
+            </div>
         </nav>
     </header>
-
-    <!-- kiss -->
+    
+    <!-- kiss hero -->
     <div class="filled m-2"></div>
     <div class="outline"></div>
 
     <!-- marquee -->
     <div class="marquee position-fixed bottom-0 start-0 mb-2">
         <span></span>
-    </div> <!-- end of marquee -->
+    </div>
 
     <!-- projects -->
-    <section id="projects">
-        <div class="parent">
-
-            <div class="div1 portrait">
-                <div class="images" id="proj1">
-                    <img src="/images/lyric_poster1.png" class="img-fluid">
-                    
-                </div>
+    <section class="projects" id="porjects">
+        <div class="container-fluid pj-container">
+            <div class="pj pj1 portrait">
+                <div class="image"><img class="img-fluid" src="/images/lyric_poster1.png" alt=""></div>
                 <div class="text"><a href=""><span>Experimental Typography<br>Poster Design</span></a></div>
-            </div> <!-- end of div1 -->
-
-            <div class="div2 portrait">
-                <div class="images">
-                    <img src="/images/chinese.png" class="img-fluid">
-                </div>
+            </div>
+            <div class="pj pj2 portrait">
+                <div class="image"><img class="img-fluid" src="/images/chinese.png" alt=""></div>
                 <div class="text"><a href=""><span>Thesis<br>Chinese: Traditional vs Simplified</span></a></div>
-            </div> <!-- end of div2 -->
-
-            <div class="div3 landscape">
-                <div class="images">
-                    <img src="/images/abc-cover.png" class="img-fluid">
-                </div>
+            </div>
+            <div class="pj pj3 landscape">
+                <div class="image"><img class="img-fluid" src="/images/abc-cover.png" alt=""></div>
                 <div class="text"><a href=""><span>Web Development<br>ABC Body Shop Redesign</span></a></div>
-            </div> <!-- end of div3 -->
-
-            <div class="div4 portrait">
-                <div class="images">
-                    <img src="/images/chess.png" class="img-fluid">
-                </div>
+            </div>
+            <div class="pj pj4 portrait">
+                <div class="image"><img class="img-fluid" src="/images/chess.png" alt=""></div>
                 <div class="text"><a href=""><span>3D Printing<br>Chess Piece</span></a></div>
-            </div>  <!-- end of div4 -->
+            </div>
 
-            <div class="div5 portrait">
-                <div class="images">
-                    <img src="/images/ux.png" class="img-fluid">
-                </div>
+            <div class="pj pj5 portrait">
+                <div class="image"><img class="img-fluid" src="/images/ux.png" alt=""></div>
                 <div class="text"><a href=""><span>UX/UI Design <br>In Progress</span></a></div>
-            </div>  <!-- end of div5 -->
-
-        </div> <!-- end of parent -->
+            </div>
+        </div>
     </section>
-
-    <!-- about me -->
-    <section id="info">
-
-    </section>
-
 
     <!-- time script -->
     <script type="text/javascript">
@@ -125,7 +103,6 @@
         new showLocalTime("hongkong", "Asia/Shanghai", "HH:mm:ss")
     </script>
 
-    <script src="src/main.js"></script>
-    
+    <script src="/src/main.js"></script>
 </body>
 </html>
