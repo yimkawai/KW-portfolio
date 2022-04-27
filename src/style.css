@@ -1,5 +1,5 @@
 nav {
-  z-index: 1;
+  z-index: 4;
 }
 
 .nav-link {
@@ -51,7 +51,7 @@ div.outline {
 
 .pj-container{
   padding: 15px;
-  margin-top: 92vh;
+  margin-top: 90vh;
 }
 
 .projects .pj {
@@ -102,9 +102,9 @@ div.outline {
   .pj-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(12, 1fr);
+      grid-template-rows: repeat(7, 1fr);
       grid-column-gap: 0vw;
-      grid-row-gap: 0vw;
+      grid-row-gap: 10vh;
   }
 
   .pj-container div {
@@ -115,7 +115,6 @@ div.outline {
   .pj-container .portrait {
       width: 350px;
       height: auto;
-
   }
   .pj-container .landscape {
       width: 500px;
@@ -124,7 +123,15 @@ div.outline {
 
   .pj1 { grid-area: 1 / 1 / 3 / 2; z-index: 2 !important;}
   .pj2 { grid-area: 2 / 2 / 4 / 3; z-index: -2 !important;}
-  .pj3 { grid-area: 5 / 1 / 7 / 3; z-index: 4 !important;}
-  .pj4 { grid-area: 9 / 1 / 11 / 2; z-index: 0 !important;}
-  .pj5 { grid-area: 8 / 2 / 10 / 3; z-index: -4 !important;} 
+  .pj3 { grid-area: 4 / 1 / 5 / 3; z-index: 4 !important;}
+  .pj4 { grid-area: 6 / 1 / 7 / 2; z-index: 0 !important;}
+  .pj5 { grid-area: 5 / 2 / 7 / 3;  z-index: -4 !important;} 
+}
+
+.about .container-fluid {
+  position: relative;
+  background-color: rgb(255, 213, 0);
+  width: 100%;
+  height: 100px;
+  z-index: 3;
 }
