@@ -1,14 +1,19 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(214, 214, 214);
 }
 
 nav {
   z-index: 6;
-  mix-blend-mode:;
+  color: rgb(39, 39, 39) !important;
 }
 
 .nav-link {
-  color: black !important;
+  color: rgb(39, 39, 39) !important;
 }
 
 div.filled, div.outline {
@@ -52,6 +57,7 @@ div.outline {
 .marquee span {
   display: inline-block;
   animation: marquee 360s linear infinite;
+  color: rgb(39, 39, 39);
 }
 
 .pj-container{
@@ -93,12 +99,12 @@ div.outline {
 
 .pj-container a {
   text-decoration: none;
-  color: black;
+  color: rgb(39, 39, 39);
   flex: 1;
 }
 
 .pj-container a:hover {
-  color: black;
+  color: rgb(39, 39, 39));
 }
 
 .pj1 { z-index: 3 !important; }
@@ -173,11 +179,6 @@ div.outline {
   z-index: -4 !important;
 } */
 
-* {
-  position: relative;
-  box-sizing: border-box;
-}
-
 section {
   display: flex;
   flex-direction: column;
@@ -186,16 +187,21 @@ section {
 }
 
 section.content.reveal {
-  background-color: rgb(0, 0, 0);
-  color: rgb(214, 214, 214);
+  background-color: black;
+  color: rgb(214, 214, 214) !important;
   height: 100vh;
   position: sticky;
   z-index: 5;
 }
 
+.reveal h1 {
+  color: rgb(255, 213, 0) !important;
+}
+
 section.wiper {
   background-color: rgb(255, 213, 0);
   height: 100vh;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 5;
