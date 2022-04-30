@@ -7,6 +7,10 @@ body {
   background-color: rgb(214, 214, 214);
 }
 
+header .container-lg {
+  max-width: 1200px !important;
+}
+
 nav {
   z-index: 6;
   color: rgb(39, 39, 39) !important;
@@ -188,14 +192,21 @@ section {
 
 section.content.reveal {
   background-color: black;
-  color: rgb(214, 214, 214) !important;
   height: 100vh;
   position: sticky;
+  position: -webkit-sticky;
   z-index: 5;
+
+  padding: 4vw 0 0 2vw;
 }
 
 .reveal h1 {
-  color: rgb(255, 213, 0) !important;
+  color: rgb(214, 214, 214) !important;
+  font-family: 'Helvetica';
+  font-size: 8.5vw !important;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 section.wiper {
