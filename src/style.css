@@ -149,40 +149,6 @@ div.outline {
   .pj5 { grid-area: 5 / 2 / 7 / 3;  z-index: -1 !important;} 
 }
 
-/* 
-.about .container-fluid {
-  position: relative;
-  background-color: rgb(255, 213, 0);
-  height: 2000px;
-  z-index: 5;
-}
-
-.about .title {
-  margin: 10vh auto 2vh auto;
-  white-space: nowrap;
-}
-
-.about h1 {
-  font-size: 3vw !important;
-}
-
-.about .breif {
-  margin: 5vh 25vw 0 33.5%;
-  font-size: ;
-}
-
-.about .circle {
-  position: absolute;
-  left: 0; 
-  right: 0; 
-  margin: 0 auto;
-  width: 70vh;
-  height: 70vh;
-  border-radius: 100vw;
-  border: solid 2px white;
-  z-index: -4 !important;
-} */
-
 section {
   display: flex;
   flex-direction: column;
