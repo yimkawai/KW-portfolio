@@ -7,11 +7,11 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 15px;
-    color: rgb(39, 39, 39);
+    color: rgb(27, 27, 27);
   }
   
   nav .navbar-brand {
     font-family: myFirstFont;
     font-size: 35px;
-    color: rgb(39, 39, 39) !important;
+    color: rgb(27, 27, 27) !important;
   }
