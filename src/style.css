@@ -75,7 +75,7 @@ div.outline {
   width: 100%;
   height: 100%;
   margin-bottom: 25vw;
-  background-color: yellowgreen;
+  background-color: rgba(255, 213, 0, 0.895);
 }
 
 .pj img {
@@ -98,12 +98,12 @@ div.outline {
   width: 100%;
   height: 100%;
   top: 45vh;
-  font-size: 16px !important;
+  font-size: 18px !important;
+  color: rgb(39, 39, 39) !important;
 }
 
 .pj-container a {
   text-decoration: none;
-  color: rgb(39, 39, 39);
   flex: 1;
 }
 
@@ -162,8 +162,7 @@ section.content.reveal {
   position: sticky;
   position: -webkit-sticky;
   z-index: 5;
-
-  padding: 4vw 0 0 2vw;
+  padding: 2vw 0 0 2vw;
 }
 
 .reveal h1 {
@@ -174,6 +173,40 @@ section.content.reveal {
   text-transform: uppercase;
   line-height: 1;
 }
+
+.reveal span {
+  color: white !important;
+  font-family: 'Helvetica';
+  font-weight: 400;
+  font-size: 8.5vw !important;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.col .star {
+  position: absolute !important;
+  content: '';
+  width: 8.2vw;
+  height: 8.2vw;
+  animation: rotate 7s linear infinite;
+  top: 7.8vw;
+  left: 25.6vw;
+}
+
+.col .spin {
+  text-align: center;
+  line-height: 1.12;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
 
 section.wiper {
   background-color: rgb(255, 213, 0);
