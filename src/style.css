@@ -8,7 +8,7 @@ body {
 }
 
 header .container-fluid {
-  max-width: 1230px !important;
+  max-width: 1210px !important;
 }
 
 nav {
@@ -200,7 +200,7 @@ section.content.reveal {
 }
 
 section.wiper {
-  background-color: rgb(27, 27, 27) ;
+  background-color: black ;
   height: 100vh;
   position: sticky;
   position: -webkit-sticky;
@@ -214,14 +214,13 @@ section.wiper {
   height: 100%;
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1300px) {
+
   section.content.reveal {
     background-color: rgb(255, 213, 0);
-    height: 100vh;
     position: sticky;
     position: -webkit-sticky;
     z-index: 5;
-    padding-top: 3vw;
   }
   
   .reveal h1 {
