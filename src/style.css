@@ -200,11 +200,15 @@ section.content.reveal {
 }
 
 section.wiper {
-  background-color: black ;
-  height: 100vh;
-  position: sticky;
-  position: -webkit-sticky;
+  background-color: rgb(249, 249, 249) ;
   z-index: 5;
+  height: 100vh;
+}
+
+.wiper .row {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .panel {
@@ -214,7 +218,17 @@ section.wiper {
   height: 100%;
 }
 
-@media (min-width: 1300px) {
+.wiper p {
+  color: !important;
+  font-size: 20px;
+  padding-bottom: 1vw;
+}
+
+.contact-box a {
+  font-size: 5vw;
+}
+
+@media (min-width: 1450px) {
 
   section.content.reveal {
     background-color: rgb(255, 213, 0);
