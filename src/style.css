@@ -149,7 +149,7 @@ div.outline {
   .pj5 { grid-area: 5 / 2 / 7 / 3;  z-index: -1 !important;} 
 
   .wiper h1 {
-    font-size: 220px !important;
+    font-size: 231px !important;
     margin-bottom: 5vw;
   }
 }
@@ -208,12 +208,12 @@ section.wiper {
   background-color: rgb(249, 249, 249) ;
   z-index: 5;
   height: auto;
-  padding-top: 15vw;
+  padding-top: 10vw;
 }
 
 .wiper .col {
   width: 100%;
-  max-width: 1150px;
+  max-width: 1170px;
   margin: auto;
 }
 
@@ -225,14 +225,28 @@ section.wiper {
 }
 
 .wiper p {
-  color: !important;
   font-size: 3vw;
-  padding-bottom: 2vw;
+  padding-bottom: 4vw;
 }
 
 .wiper h1 {
   font-size: 19vw;
   margin-bottom: 5vw;
+}
+
+.wiper .col a {
+  font-size: 2.5vw;
+  border: solid 3px rgb(27, 27, 27);
+  border-radius: 100px;
+  padding: 0px 25px;
+  text-decoration: none;
+  color: rgb(27, 27, 27) !important;
+  margin: 0 10px;
+}
+
+.wiper .col a:hover {
+  border: solid 3px rgb(27, 27, 27);
+  background-color: rgb(255, 213, 0);
 }
 
 @media (min-width: 1450px) {
@@ -271,4 +285,30 @@ section.wiper {
     line-height: 1.16;
   }
   
+}
+
+.marquee-2 {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 5vw 0;
+}
+
+.marquee-2 span {
+  display: inline-block;
+  animation: marquee 360s linear infinite;
+  color: rgb(27, 27, 27);
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+
+.marquee-2 a {
+  color: rgb(27, 27, 27);
+  font-size: 5vw;
+  text-decoration: none;
+}
+
+.marquee-2 a:hover {
+  color: rgb(27, 27, 27);
 }
