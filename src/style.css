@@ -117,7 +117,6 @@ div.outline {
 .pj4 { z-index: 3 !important;}
 .pj5 { z-index: -1 !important; } 
 
-
 @media (min-width: 1100px) {
 
   .pj-container {
@@ -149,9 +148,9 @@ div.outline {
   .pj5 { grid-area: 5 / 2 / 7 / 3;  z-index: -1 !important;} 
 
   .wiper h1 {
-    font-size: 231px !important;
-    margin-bottom: 5vw;
+    font-size: 108px !important;
   }
+
 }
 
 
@@ -208,13 +207,14 @@ section.wiper {
   background-color: rgb(249, 249, 249) ;
   z-index: 5;
   height: auto;
-  padding-top: 10vw;
+  
 }
 
 .wiper .col {
   width: 100%;
   max-width: 1170px;
   margin: auto;
+  padding: 15vw 1.5vw 8vw 1.5vw;
 }
 
 .panel {
@@ -226,27 +226,28 @@ section.wiper {
 
 .wiper p {
   font-size: 3vw;
-  padding-bottom: 4vw;
+  padding-bottom: 6vw;
 }
 
 .wiper h1 {
-  font-size: 19vw;
-  margin-bottom: 5vw;
+  font-size: 7.8vw;
+  margin-bottom: 10vw;
+  font-weight: 400;
 }
 
 .wiper .col a {
   font-size: 2.5vw;
-  border: solid 3px rgb(27, 27, 27);
+  border: solid 0.1em rgb(27, 27, 27);
   border-radius: 100px;
-  padding: 0px 25px;
+  padding: 0px 2vw;
   text-decoration: none;
   color: rgb(27, 27, 27) !important;
-  margin: 0 10px;
+  margin: 0 .5vw;
 }
 
 .wiper .col a:hover {
-  border: solid 3px rgb(27, 27, 27);
-  background-color: rgb(255, 213, 0);
+  background-color: rgb(27, 27, 27);
+  color:  rgb(255, 213, 0) !important;
 }
 
 @media (min-width: 1450px) {
@@ -292,12 +293,11 @@ section.wiper {
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
-  margin: 5vw 0;
 }
 
 .marquee-2 span {
   display: inline-block;
-  animation: marquee 360s linear infinite;
+  animation: marquee 700s linear infinite;
   color: rgb(27, 27, 27);
   font-size: 5vw;
   text-transform: uppercase;
@@ -311,4 +311,24 @@ section.wiper {
 
 .marquee-2 a:hover {
   color: rgb(27, 27, 27);
+}
+
+.marquee-2 #mqEmail {
+  display: inline-block;
+  animation: marquee-rev 500s linear infinite;
+  color: rgb(27, 27, 27);
+  font-size: 4.8vw;
+  text-transform: uppercase;
+}
+
+
+
+@keyframes marquee-rev {
+  0% {
+      transform: translateX(-60%);
+  }
+  
+  100% {
+      transform: translateX(0%);
+  }
 }
