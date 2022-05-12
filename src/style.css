@@ -147,10 +147,6 @@ div.outline {
   .pj4 { grid-area: 6 / 1 / 7 / 2; z-index: 3 !important;}
   .pj5 { grid-area: 5 / 2 / 7 / 3;  z-index: -1 !important;} 
 
-  .wiper h1 {
-    font-size: 108px !important;
-  }
-
 }
 
 
@@ -230,9 +226,10 @@ section.wiper {
 }
 
 .wiper h1 {
-  font-size: 7.8vw;
-  margin-bottom: 10vw;
-  font-weight: 400;
+  font-size: 2vw;
+  margin-bottom: 2vw;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .wiper .col a {
@@ -317,7 +314,7 @@ section.wiper {
   display: inline-block;
   animation: marquee-rev 700s linear infinite;
   color: rgb(27, 27, 27);
-  font-size: 4.8vw;
+  font-size: 4.9vw;
   text-transform: uppercase;
 }
 
@@ -334,24 +331,28 @@ section.wiper {
 }
 
 footer {
-  background-color: rgb(249, 249, 249);
-  z-index: 6;
-  position: relative;
   width: 100%;
 }
 
 footer h1 {
+  background-color: rgb(249, 249, 249);
+  position: absolute;
+  width: 100%;
   font-family: 'Times New Roman', Times, serif;
   font-size: 25vw;
   font-style: italic;
-  font-weight: 500;
-  padding: 4vw 0 6vw;
+  font-weight: 700;
+  padding: 4vw 0 4vw 0;
+  z-index: 6;
 }
 
 footer p {
+  width: 99%;
+  position: absolute;
   font-family: myFirstFont;
-  font-size: 5vw;
-  transform: rotate(-4deg);
-  color: rgb(255, 213, 0);
-  top: -50px;
+  font-size: 5.7vw;
+  transform: rotate(-5deg);
+  color: orange;
+  z-index: 7;
+  margin-top: 16vw;
 }
