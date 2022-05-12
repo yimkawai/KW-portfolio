@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/src/font.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet"> 
 
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -54,8 +54,8 @@
                     </ul>
                 </div>
                 <ul class="nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="">Projects</a></li>
-                    <li class="nav-item link_disable"><a class="nav-link" href="">Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item link_disable"><a class="nav-link" href="#info">Info</a></li>
                 </ul>
             </div>
         </nav>
@@ -71,9 +71,9 @@
     </div>
 
     <!-- projects -->
-    <section class="projects panel content coverup" id="porjects">
+    <section class="projects panel content coverup">
         <div class="container-fluid pj-container">
-            <div class="pj pj1 portrait">
+            <div class="pj pj1 portrait" id="projects">
                 <div class="image"><img class="img-fluid" src="/images/lyric_poster1.png" alt=""></div>
                 <div class="text"><a href=""><span>Experimental Typography<br>Poster Design</span></a></div>
             </div>
@@ -107,10 +107,10 @@
             </div>
         </section>
 
-        <section class="wiper">
+        <section class="wiper" id="info">
             <div class="container-fluid">
                 <div class="col">
-                    <h1>a little more about me</h1>
+                    <h1 class="text-center">a little more about me</h1>
                     <p>I am a front-end developer with a background in graphic design freelancing field. My nearly 10 years design experience has given me an extra bonus for web development and interaction design, allow me to make sure no details are lost in translation. Before that, I spent a few years at <a href="https://www.ocadu.ca/" target="_blank">OCADU</a> majoring in Graphic Design.</p>
                     <p>Building aesthetic tech solutions is my biggest passion, and coding has been a life-long hobby for me. When I was young, I became obsessed with the archaic blog, called - Xanga, and spent a few years building skin/theme as a self-taught HTML&CSS amateur. During Covid, I'd like to step outside of my comfort zone, so I decided to pick up coding again, to pursued a formal education at <a href="https://www.code-youth.ca/" target="_blank">Code Youth</a>. </p>
                     <p>Other than coding, I love reading, taking walk with my husky - Zombie to meeting our friends and playing volleyball.</p>
@@ -127,6 +127,10 @@
         </section>
 
     </div>
+
+    <footer>
+        <h1 class="text-center">2022©</h1>
+    </footer>
 
     <!-- time script -->
     <script type="text/javascript">

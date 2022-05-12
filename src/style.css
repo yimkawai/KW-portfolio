@@ -117,7 +117,7 @@ div.outline {
 .pj4 { z-index: 3 !important;}
 .pj5 { z-index: -1 !important; } 
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
 
   .pj-container {
       display: grid;
@@ -133,11 +133,11 @@ div.outline {
   }
 
   .pj-container .portrait {
-      width: 350px;
+      width: 420px;
       height: auto;
   }
   .pj-container .landscape {
-      width: 500px;
+      width: 570px;
       height: auto;
   }
 
@@ -212,7 +212,7 @@ section.wiper {
 
 .wiper .col {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: auto;
   padding: 15vw 1.5vw 8vw 1.5vw;
 }
@@ -297,7 +297,7 @@ section.wiper {
 
 .marquee-2 span {
   display: inline-block;
-  animation: marquee 700s linear infinite;
+  animation: marquee 1000s linear infinite;
   color: rgb(27, 27, 27);
   font-size: 5vw;
   text-transform: uppercase;
@@ -315,7 +315,7 @@ section.wiper {
 
 .marquee-2 #mqEmail {
   display: inline-block;
-  animation: marquee-rev 500s linear infinite;
+  animation: marquee-rev 700s linear infinite;
   color: rgb(27, 27, 27);
   font-size: 4.8vw;
   text-transform: uppercase;
@@ -331,4 +331,27 @@ section.wiper {
   100% {
       transform: translateX(0%);
   }
+}
+
+footer {
+  background-color: rgb(249, 249, 249);
+  z-index: 6;
+  position: relative;
+  width: 100%;
+}
+
+footer h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25vw;
+  font-style: italic;
+  font-weight: 500;
+  padding: 4vw 0 6vw;
+}
+
+footer p {
+  font-family: myFirstFont;
+  font-size: 5vw;
+  transform: rotate(-4deg);
+  color: rgb(255, 213, 0);
+  top: -50px;
 }
