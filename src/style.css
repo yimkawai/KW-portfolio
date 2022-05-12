@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(249, 249, 249);
 }
 
 header .container-fluid {
@@ -208,7 +208,7 @@ section.wiper {
 
 .wiper .col {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1210px;
   margin: auto;
   padding: 15vw 1.5vw 8vw 1.5vw;
 }
@@ -342,7 +342,7 @@ footer h1 {
   font-size: 25vw;
   font-style: italic;
   font-weight: 700;
-  padding: 4vw 0 4vw 0;
+  padding: 4vh 0 0 0;
   z-index: 6;
 }
 
@@ -355,4 +355,54 @@ footer p {
   color: orange;
   z-index: 7;
   margin-top: 16vw;
+}
+
+.item-title {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  margin: 40vh auto;
+  position: fixed;
+}
+
+.item-title h1 {
+  width: 100%;
+  font-size: 7vw;
+  font-weight: 600;
+}
+
+.item-image {
+  width: 100%;
+  margin-top: 90vh;
+  margin-bottom: 16vh;
+}
+
+.item-image .item {
+  max-width: 95vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.next-item a {
+  font-size: 2.5vw;
+  border: solid 0.1em rgb(27, 27, 27);
+  border-radius: 100px;
+  padding: 1vh 10vw;
+  text-decoration: none;
+  color: rgb(27, 27, 27) !important;
+  margin: 0 .5vw;
+}
+
+
+@media (min-width: 745px) {
+
+  .item-image .item {
+    max-width: 65vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
