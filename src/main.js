@@ -13,7 +13,7 @@ var myStringArray2 = ["linkedin", "github", "twitter", "instagram"];
 var myStringArray3 = ["✌︎", "＃", "✎", "ツ"]
 var result = ""
 for (var i = 0; i < myStringArray.length; i++) {
-    result = result + " " + myStringArray3[i] + " " + " <a href='" + myStringArray[i] + "'>" + myStringArray2[i] + "</a>";
+    result = result + " " + myStringArray3[i] + " " + " <a href='" + myStringArray[i] + "' target='_blank'>" + myStringArray2[i] + "</a>";
 }
 
 function makeMarquee2() {
