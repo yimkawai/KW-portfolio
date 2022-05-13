@@ -169,7 +169,7 @@ section.content.reveal {
 .reveal h1 {
   color: rgb(27, 27, 27)  !important;
   font-family: 'Helvetica';
-  font-size: 8.5vw !important;
+  font-size: 8.36vw !important;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 1;
@@ -181,8 +181,8 @@ section.content.reveal {
   width: 8.2vw;
   height: 8.2vw;
   animation: rotate 7s linear infinite;
-  top: 7.8vw;
-  left: 25.6vw;
+  top: 7.7vw;
+  left: 25.4vw;
 }
 
 .col .spin {
@@ -332,6 +332,7 @@ section.wiper {
 
 footer {
   width: 100%;
+  background-color: rgb(249, 249, 249);
 }
 
 footer h1 {
@@ -342,7 +343,7 @@ footer h1 {
   font-size: 25vw;
   font-style: italic;
   font-weight: 700;
-  padding: 4vh 0 0 0;
+  padding: 5vh 0 15vh;
   z-index: 6;
 }
 
@@ -354,7 +355,7 @@ footer p {
   transform: rotate(-5deg);
   color: orange;
   z-index: 7;
-  margin-top: 16vw;
+  margin-top: 12vh;
 }
 
 .item-title {
