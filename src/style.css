@@ -133,11 +133,11 @@ div.outline {
   }
 
   .pj-container .portrait {
-      width: 420px;
+      width: 35vw;
       height: auto;
   }
   .pj-container .landscape {
-      width: 570px;
+      width: 60vw;
       height: auto;
   }
 
